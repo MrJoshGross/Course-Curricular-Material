@@ -1,0 +1,54 @@
+<script>
+    let groupSize = 3;
+    let list = ["a", "b", "c", "d", "e", "1", "2", "3", "4", "5", "6"];
+
+    let printGroups = (groups) => {
+        for(let g of groups){
+            console.log("Start group");
+            for(let e of g){
+                console.log(e);
+            }
+            console.log("End group");
+        }
+    }
+
+    let generateGroups = (list, groupSize) => {
+        shuffleArray(list);
+        let groups = chunk(list, groupSize);
+        console.log("Generated Groups: ");
+        console.log(groups);
+        return groups;
+    }
+
+    let chunk = (list, groupSize) => {
+        let groups = [];
+        let numGroups = (list.length / groupSize) - 1;
+        for(let i = 0; i < numGroups; i++){
+            let group = [];
+            for(let x = 0; x < groupSize; x++){
+                group[x] = list[i*groupSize + x];
+            }
+            groups[i] = group;
+        }
+        for(let leftovers = numGroups * groupSize + 1; leftovers < list.length; leftovers++){
+            let random;
+            do{
+                random = Math.floor(Math.random() * groups.length);
+            } while(groups[random].length > groupSize);
+            groups[random].push(list[leftovers]);
+        }
+        return groups;
+    }
+
+    // from https://stackoverflow.com/a/12646864 - thanks!
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    let groups = generateGroups(list, groupSize);
+    // printGroups(groups);
+
+</script>
