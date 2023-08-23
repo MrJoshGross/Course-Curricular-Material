@@ -1,0 +1,44 @@
+caesar shift
+
+plaintext: 	abcdefghijklmnopqrstuvwxyz
+ciphertext: 	defghijklmnopqrstuvwxyzabc
+
+encryption: go from plaintext to ciphertext
+decryption: go from ciphertext to plaintext
+
+encrypt: find letter in plaintext alphabet and go straight down to ciphertext alphabet
+
+decrypt: find letter in ciphertext alphabet and go straight up to plaintext alphabet
+
+encrypt "this is a message"
+decrypt "d vhfuhw phvvdjh"
+vigenere with key
+
+	
+plaintext alphabet:	abcdefghijklmnopqrstuvwxyz
+ciphertext alphabet:	bacondefghijklmpqrstuvwxyz
+ciphertext cab alpha:	cabdefghijklmnopqrstuvwxyz
+
+encrypt "this is a bacony message" as a vigenere with key "bacon"
+ciphertext bacon key: tfgs gs b abcmly knssben
+ciphertext cab key: this is c acbony messcge
+
+plaintext bacon with cab key: 
+
+
+encrypt "go to the store" with key "jumbo"
+plaintext: 		abcdefghijklmnopqrstuvwxyz
+ciphertext jumbo:	jumboacdefghiklnpqrstvwxyz
+
+
+
+
+problem: encrypt as a caesar shift: this is a very long message that has a lot of letters and words that would take a very long time to encrypt and decrypt. 
+
+
+
+
+
+
+
+
