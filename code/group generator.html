@@ -3,12 +3,14 @@
     let list = ["a", "b", "c", "d", "e", "1", "2", "3", "4", "5", "6"];
 
     let printGroups = (groups) => {
+	let string = "";
         for(let g of groups){
-            console.log("Start group");
+            string = "[";
             for(let e of g){
-                console.log(e);
+                string += e + ", ";
             }
-            console.log("End group");
+            string += "]";
+	document.write(string);
         }
     }
 
@@ -49,6 +51,6 @@
     }
 
     let groups = generateGroups(list, groupSize);
-    // printGroups(groups);
+    printGroups(groups);
 
 </script>
