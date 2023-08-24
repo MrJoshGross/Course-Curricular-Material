@@ -1,0 +1,57 @@
+not not not 0
+not not (not 0)
+not not 1
+not (not 1)
+not 0
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+a = ride a bike = 0 for no, 1 for yes
+b = eat a burger = 0 for no, 1 for yes
+
+what is the value of a AND b when
+
+you ride a bike and eat a burger: 1 AND 1 = 1
+you don't ride a bike and eat a burger: 0 AND 1 = 0
+you don't ride a bike and don't eat a burger: 0 AND 0 = 0
+you ride a bike and don't eat a burger: 1 AND 0 = 0 
+
+
+
+
+
+
+
+you ride a bike or eat a burger: 1 OR 1 = 1
+you don't ride a bike or eat a burger: 
+you don't ride a bike or don't eat a burger:
+you ride a bike or don't eat a burger: 
+
+
+
+
+
+
+
+
+
+
+
+you either ride a bike or eat a burger: 1 XOR 1 = 0
+you either don't ride a bike or eat a burger: 0 XOR 1 = 1
+you either don't ride a bike or don't eat a burger: 0 XOR 0 = 0
+you either ride a bike or don't eat a burger: 1 XOR 0 = 1
+
+
+
