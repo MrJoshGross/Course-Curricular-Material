@@ -4,6 +4,7 @@ public class Strings {
 	
 	/**
 	 * Determines if the given string is "DOG"
+	 * If the given string is null, return false
 	 * @param str the string to check
 	 * @return true if the string equals "DOG", false otherwise
 	 * 
@@ -18,6 +19,7 @@ public class Strings {
 	
 	/**
 	 * Determines if the given string starts with "DOG"
+	 * If the given string is null, return false
 	 * @param str the string to check
 	 * @return true if the string starts with "DOG", false otherwise
 	 * 
@@ -32,6 +34,7 @@ public class Strings {
 	
 	/**
 	 * Determines if the given string contains "DOG"
+	 * If the given string is null, return false
 	 * @param str the string to check
 	 * @return true if the string contains "DOG", false otherwise
 	 * 
@@ -46,6 +49,7 @@ public class Strings {
 
 	/**
 	 * Determines if the given string ends with "DOG"
+	 * If the given string is null, return false
 	 * @param str the string to check
 	 * @return true if the string ends with "DOG", false otherwise
 	 * 
@@ -80,6 +84,7 @@ public class Strings {
 	
 	/**
 	 * Determines if the given string represents an even number
+	 * If the given string is null, contains 0 characters, or doesn't represent a valid number, return false
 	 * @param str the string to check
 	 * @return true if the string represents an even number, false otherwise
 	 * 
@@ -95,6 +100,7 @@ public class Strings {
 	
 	/**
 	 * Determines if the given string represents an odd number
+	 * If the given string is null, contains 0 characters, or doesn't represent a valid number, return false
 	 * @param str the string to check
 	 * @return true if the string represents an odd number, false otherwise
 	 * 
@@ -110,6 +116,7 @@ public class Strings {
 	
 	/**
 	 * Obtains the first character in a given string
+	 * If the given string is null or contains 0 characters, return '-'
 	 * @param str the string to retrieve the character from
 	 * @return the first character of the string if it is not null and has a length greater than 0, '-' otherwise
 	 * 
@@ -124,6 +131,7 @@ public class Strings {
 	
 	/**
 	 * Obtains the last character in a given string
+	 * If the given string is null or contains 0 characters, return '-'
 	 * @param str the string to retrieve the character from
 	 * @return the last character of the string if it is not null and has a length greater than 0, '-' otherwise
 	 * 
@@ -138,6 +146,7 @@ public class Strings {
 	
 	/**
 	 * Obtains the middle character in a given string
+	 * If the given string is null or contains 0 characters, return '-'
 	 * @param str the string to retrieve the character from
 	 * @return the middle character of the string if it is not null and has a length greater than 0, '-' otherwise
 	 * 
@@ -171,6 +180,7 @@ public class Strings {
 	
 	/**
 	 * Replaces all copies of e or E in the given string with a *
+	 * If the given string is null, return null
 	 * @param str the string to perform the replacement on
 	 * @return a string in which all instances of e or E have been replaced with a *
 	 * 
@@ -184,6 +194,7 @@ public class Strings {
 	
 	/**
 	 * Returns the first half of the given string
+	 * If the given string is null, return null
 	 * @param str the string to cut in half
 	 * @return the first half of the given string, or null, if the string is null 
 	 * 
@@ -197,6 +208,7 @@ public class Strings {
 	
 	/**
 	 * Returns the second half of the given string
+	 * If the given string is null, return null
 	 * @param str the string to cut in half
 	 * @return the second half of the given string, or null, if the string is null 
 	 * 
@@ -210,6 +222,7 @@ public class Strings {
 
 	/**
 	 * Returns the first n characters of the given string
+	 * If the string is null, n is negative, or if n is greater than the length of the string, return null
 	 * @param str the string whose first n characters will be returned
 	 * @param n the number of characters to return
 	 * @return a string containing the first n characters
@@ -224,6 +237,7 @@ public class Strings {
 	
 	/**
 	 * Returns the last n characters of the given string
+	 * If the string is null, n is negative, or if n is greater than the length of the string, return null
 	 * @param str the string whose last n characters will be returned
 	 * @param n the number of characters to return
 	 * @return a string containing the last n characters of the original string
@@ -238,6 +252,7 @@ public class Strings {
 	
 	/**
 	 * Returns every 3rd character in the given string
+	 * If the given string is null, return null
 	 * @param str the string whose every 3rd character will be returned
 	 * @return a string containing every 3rd character of the original string
 	 * 
@@ -251,6 +266,7 @@ public class Strings {
 	
 	/**
 	 * Returns every nth character in the given string
+	 * If the given string is null or if n is negative, return null
 	 * @param str the string whose every nth character will be returned
 	 * @param n the space between letters to take in the given string
 	 * @return a string containing every nth character of the original string
@@ -265,6 +281,7 @@ public class Strings {
 	
 	/**
 	 * Reverses a given string
+	 * If the given string is null, return null
 	 * @param str the string to reverse
 	 * @return a string where the first letter is swapped with the last letter, the second letter is swapped with the second to last letter, and so on
 	 * 
@@ -278,6 +295,7 @@ public class Strings {
 	
 	/**
 	 * Determines if a given string is a palindrome or not
+	 * If the given string is null, return null
 	 * @param str the string to check
 	 * @return true if the first letter equals the last letter, the second letter equals the second to last letter, and so on; false otherwise
 	 * 
@@ -291,6 +309,7 @@ public class Strings {
 	
 	/**
 	 * Determines if two strings are equal
+	 * If the given strings are both null, return true
 	 * @param s1 the first string
 	 * @param s2 the second string
 	 * @return true if both strings are null, or if both strings have the same length, and every character in the first equals the character in its respective index in the second string
@@ -306,6 +325,7 @@ public class Strings {
 	
 	/**
 	 * Pig-Latinizes a given word
+	 * If the given string is null, return null
 	 * @param str the word to Pig-Latinize
 	 * @return A string where the first letter of the word has been moved to the end, followed by "ay"
 	 * 
