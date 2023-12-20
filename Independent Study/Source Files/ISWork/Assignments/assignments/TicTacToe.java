@@ -118,8 +118,6 @@ public class TicTacToe {
 		return null;
 	}
 
-
-	
 	public static void main(String[] args) {
 		boolean isGameOver = false;
 		String pieceTurn = X;
